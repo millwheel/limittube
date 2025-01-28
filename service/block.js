@@ -32,7 +32,7 @@ export function blockYoutube(maximumUsageSecond) {
 function injectBlockOverlay(maximumUsageTimeSetting) {
     const blocker = document.createElement("div");
     blocker.id = "youtube-usage-blocker";
-    blocker.innerText = `You have reached your maximum YouTube usage time: ${maximumUsageTimeSetting}`;
+    blocker.innerText = `You have reached your maximum daily YouTube usage time: ${maximumUsageTimeSetting} \n\nVisit YouTube Tomorrow!`;
     blocker.style.position = "fixed";
     blocker.style.width = "100%";
     blocker.style.height = "100%";
@@ -43,6 +43,7 @@ function injectBlockOverlay(maximumUsageTimeSetting) {
     blocker.style.display = "flex";
     blocker.style.justifyContent = "center";
     blocker.style.alignItems = "center";
+    blocker.style.textAlign = "center";
 
     if (!document.getElementById("youtube-usage-blocker")) {
         document.body.appendChild(blocker);
