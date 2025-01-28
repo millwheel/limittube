@@ -40,6 +40,7 @@ export function startYouTubeTimer(startSecond) {
         checkNotificationCondition(spentSecond, appState.maximumUsageSecond);
         if (checkBlockTimeCondition(spentSecond, appState.maximumUsageSecond)) {
             appState.blockStatus = true;
+            stopYouTubeTimer();
         }
     }, 1000);
 }
