@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./popup.css" />
+    <title>Limit YouTube Usage Time</title>
+</head>
+<body>
+    <div class="header-container">
+        <div class="header-title">
+            <img src="./icons/icon.png" alt="limitTubeIcon" class="header-title-icon">
+            <h1 class="header-title-name">LimitTube</h1>
+        </div>
+        <p class="header-description">Set your maximum daily YouTube usage time.</p>
+    </div>
+
+    <form class="select-box">
+        <label for="hours"></label>
+        <select id="hours">
+            <option value="hours">Hours</option>
+        </select>
+
+        <label for="minutes"></label>
+        <select id="minutes">
+            <option value="minutes">Minutes</option>
+        </select>
+
+        <button type="submit" id="submit-button">Submit</button>
+    </form>
+
+<script src="./popup.js" type="module"></script>
+</body>
+</html>

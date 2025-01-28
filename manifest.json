@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "LimitTube",
+  "version": "0.1",
+  "description": "Limit your YouTube usage by setting a maximum watch time and stay focused!",
+  "permissions": ["storage", "tabs", "notifications", "alarms", "scripting"],
+  "host_permissions": ["*://*.youtube.com/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons" : {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  }
+}
